@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма по добавлению статьи</title>
+</head>
+<body>
+{% block content %}
+    <div class="features">
+        <h1>Форма по добавлению статьи</h1>
+        <form method="post">
+
+            {{ form }}
+<!--            .title }}-->
+<!--            {{ form.anons }}-->
+<!--            {{ form.full_text }}-->
+<!--            {{ form.date }}-->
+
+<!--            <input type="text" placeholder="Название статьи" class="fro m-control"><br>-->
+<!--            <input type="text" placeholder="Анонс статьи" class="from-control"><br>-->
+<!--            <textarea class="form-control" placeholder="Текст статьи"></textarea><br>-->
+<!--            <input type="date" class="from-control"><br>-->
+<!--            <input type="time" class="from-control"><br>-->
+<!--            <button class='btn btn-success' type="submit">Добавить статью</button>-->
+            {% csrf_token %}
+            <span>{{ error }}</span>
+        </form>
+    </div>
+{% endblock %}
+</body>
+</html>
