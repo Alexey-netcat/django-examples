@@ -3887,4 +3887,22 @@ form {
 
 	}
 
-main
+/* News */
+    main .features {
+        float: left;
+        color: #fff
+        margin-top: 10px;
+        text-align: center;
+        width: 75%;
+    }
+
+    main .features h1 {font-size: 50 px;}
+    main .features p {max-width: 400 px; margin: 20 px auto}
+
+    .alert-warning {
+        float = left;
+        clear: both;
+        width: 400px;
+        margin: 20px 34%;
+        text-align: left;
+    }

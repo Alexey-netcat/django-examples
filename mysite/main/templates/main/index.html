@@ -64,77 +64,66 @@
 					</section>
 
 
-				<!-- Section -->
-				<!-- Далее реализовываю ДБ -->
+				<!-- Section 3-->
 					<section>
 						<header>
-							<h2>Ultrices erat magna sed condimentum</h2>
+							<h2>Новости на моем сайте</h2>
 						</header>
 						<div class="content">
-							<a href="{% url 'create' %}"><li><button class="btn btn-info"><i class="fasfa-plus-circle"></i>Добавить запись</button></li></a>
-
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Erat aliquam</h3>
-										<p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt  ipsum suspendisse ultrices gravida.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="{% static 'main/image/gallery/fulls/01.jpg' %}" class="landscape"><img src="{% static 'main/image/gallery/thumbs/01.jpg' %}" alt="" /></a>
-											<a href="{% static 'main/image/gallery/fulls/02.jpg' %}"><img src="{% static 'main/image/gallery/thumbs/02.jpg' %}" alt="" /></a>
-											<a href="{% static 'main/image/gallery/fulls/03.jpg' %}"><img src="{% static 'main/image/gallery/thumbs/03.jpg' %}" alt="" /></a>
-											<a href="{% static 'main/image/gallery/fulls/04.jpg' %}" class="landscape"><img src="{% static 'main/image/gallery/thumbs/04.jpg' %}" alt="" /></a>
-										</div>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Nisl consequat</h3>
-										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="{% static 'main/image/fulls/05.jpg' %}" class="landscape"><img src="{% static 'main/image/gallery/thumbs/05.jpg' %}" alt="" /></a>
-											<a href="{% static 'main/image/fulls/06.jpg' %}"><img src="{% static 'main/image/gallery/thumbs/06.jpg' %}" alt="" /></a>
-											<a href="{% static 'main/image/fulls/07.jpg' %}"><img src="{% static 'main/image/gallery/thumbs/07.jpg' %}" alt="" /></a>
-										</div>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header>
-										<h3>Lorem gravida</h3>
-										<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="% static 'main/image/fulls/08.jpg' %" class="portrait"><img src="{% static 'main/image/gallery/thumbs/08.jpg' %}" alt="" /></a>
-											<a href="% static 'main/image/fulls/09.jpg' %" class="portrait"><img src="{% static 'main/image/gallery/thumbs/09.jpg' %}" alt="" /></a>
-											<a href="% static 'main/image/fulls/10.jpg' %" class="landscape"><img src="{% static 'main/image/gallery/thumbs/10.jpg' %}" alt="" /></a>
-										</div>
-									</div>
-								</section>
-
+							<p>Реализовал добавление новостей с помощью admin-панели и специальной страницы на которой пользователь может внести новость без захода в админку. Реализовано на sqlite3 через Django ORM</p>
+							<p>Чтобы добавить запись нажмите на кнопку 'добавить запись', чтобы посмотреть кликните на кнопку 'Читать новости'</p>
+							<a href="{% url 'create' %}"><button class="button primary">Добавить запись</button></a>
+							<a href="{% url 'news_home' %}"><button class="button primary">Читать новости</button></a>
 						</div>
 					</section>
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Duis sed adpiscing veroeros amet</h2>
-						</header>
-						<div class="content">
-							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
-							<ul class="actions">
-								<li><a href="#" class="button primary large">Get Started</a></li>
-								<li><a href="#" class="button large">Learn More</a></li>
-							</ul>
-						</div>
-					</section>
+
+							<!-- Section -->
+<!--								<section>-->
+<!--									<header>-->
+<!--										<h3>Nisl consequat</h3>-->
+<!--										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>-->
+<!--									</header>-->
+<!--									<div class="content">-->
+<!--										<div class="gallery">-->
+<!--											<a href="{% static 'main/image/fulls/05.jpg' %}" class="landscape"><img src="{% static 'main/image/gallery/thumbs/05.jpg' %}" alt="" /></a>-->
+<!--											<a href="{% static 'main/image/fulls/06.jpg' %}"><img src="{% static 'main/image/gallery/thumbs/06.jpg' %}" alt="" /></a>-->
+<!--											<a href="{% static 'main/image/fulls/07.jpg' %}"><img src="{% static 'main/image/gallery/thumbs/07.jpg' %}" alt="" /></a>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</section>-->
+
+<!--							&lt;!&ndash; Section &ndash;&gt;-->
+<!--								<section>-->
+<!--									<header>-->
+<!--										<h3>Lorem gravida</h3>-->
+<!--										<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>-->
+<!--									</header>-->
+<!--									<div class="content">-->
+<!--										<div class="gallery">-->
+<!--											<a href="% static 'main/image/fulls/08.jpg' %" class="portrait"><img src="{% static 'main/image/gallery/thumbs/08.jpg' %}" alt="" /></a>-->
+<!--											<a href="% static 'main/image/fulls/09.jpg' %" class="portrait"><img src="{% static 'main/image/gallery/thumbs/09.jpg' %}" alt="" /></a>-->
+<!--											<a href="% static 'main/image/fulls/10.jpg' %" class="landscape"><img src="{% static 'main/image/gallery/thumbs/10.jpg' %}" alt="" /></a>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</section>-->
+
+<!--						</div>-->
+<!--					</section>-->
+
+<!--				&lt;!&ndash; Section &ndash;&gt;-->
+<!--					<section>-->
+<!--						<header>-->
+<!--							<h2>Duis sed adpiscing veroeros amet</h2>-->
+<!--						</header>-->
+<!--						<div class="content">-->
+<!--							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>-->
+<!--							<ul class="actions">-->
+<!--								<li><a href="#" class="button primary large">Get Started</a></li>-->
+<!--								<li><a href="#" class="button large">Learn More</a></li>-->
+<!--							</ul>-->
+<!--						</div>-->
+<!--					</section>-->
 
 				<!-- Elements -->
 				<!--
@@ -407,24 +396,24 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 				<!-- Section -->
 					<section>
 						<header>
-							<h2>Get in touch</h2>
+							<h2>Свяжитесь со мной</h2>
 						</header>
 						<div class="content">
-							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
+							<p>Вы можете отправить мне сообщение на почту. Для этого заполните форму и нажмите кнопку "Отправить". Пока не работает форма</p>
 							<form>
 								<div class="fields">
 									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
+										<input type="text" name="name" id="name" placeholder="Имя" />
 									</div>
 									<div class="field half">
 										<input type="email" name="email" id="email" placeholder="Email" />
 									</div>
 									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+										<textarea name="message" id="message" placeholder="Введи сообщение" rows="7"></textarea>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
+									<li><input type="submit" value="Отправить" class="button primary" /></li>
 								</ul>
 							</form>
 						</div>
@@ -432,25 +421,17 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 							<ul class="items">
 								<li>
 									<h3>Email</h3>
-									<a href="#">information@untitled.ext</a>
+									<a href="mailto:vasiukov.lesha@yandex.ru">vasiukov.lesha@yandex.ru</a>
 								</li>
 								<li>
-									<h3>Phone</h3>
-									<a href="#">(000) 000-0000</a>
-								</li>
-								<li>
-									<h3>Address</h3>
-									<span>1234 Somewhere Road, Nashville, TN 00000</span>
+									<h3>Telegram</h3>
+									<a href="https://t.me/alexey_vasiukov">alexey_vasiukov</a>
 								</li>
 								<li>
 									<h3>Elsewhere</h3>
 									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon brands fa-codepen"><span class="label">Codepen</span></a></li>
+										<li><a href="https://instagram.com/alexeyvasiukov333" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://github.com/Alexey-netcat" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 									</ul>
 								</li>
 							</ul>
