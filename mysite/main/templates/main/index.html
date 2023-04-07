@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>Paradigm Shift by HTML5 UP</title>
+		<title>Сайт Алексея</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -23,37 +23,39 @@
 					<section class="intro">
 						<header>
 							<h1>Васюков Алексей</h1>
-							<p>Этот сайт создан на Django за деплоен на "" и работает с DB PostgreSQL. <br>Сайт был создан в учебных целях.<br><a href="mailto:vasiukov.lesah@yandex.ru">vasiukov.lesha@yandex.ru</a>
+							<p>Этот сайт создан на Django за деплоен на "S3" и работает с DB sqlite3<br>Сайт был создан в учебных целях.<br>
+							<a href="mailto:vasiukov.lesah@yandex.ru">vasiukov.lesha@yandex.ru</a>
+							<a href="https://github.com/Alexey-netcat">Github.com/Alexey-netcat</a>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
 						</header>
 						<div class="content">
-							<span class="image fill" data-position="center"><img src="{% static 'main/image/pic01.jpg' %}" alt="" /></span>
+							<span class="image fill" data-position="center"><img src="{% static 'main/image/pic01.jpeg' %}" alt="" /></span>
 						</div>
 					</section>
 
 				<!-- Section 1 -->
-					<section>
+					<section id="first">
 						<header>
 							<h2>Обо мне</h2>
 						</header>
 						<div class="content">
-							<p><strong>Активно развиваюсь в програмировании</strong>Имею большой опыт ведения проектов. Но стал изучать програмирование на python и решил дальше развиваться в этой сфере.</p>
+							<p><strong>Активно развиваюсь в програмировании</strong><br>Имею большой опыт ведения проектов. Но стал изучать програмирование на python и решил дальше развиваться в этой сфере.</p>
 							<ul class="feature-icons">
-								<li class="icon solid fa-laptop">Могу работать с консолью (Mac)</li>
+								<li class="icon solid fa-laptop">Могу работать с консолью Mac</li>
 								<li class="icon solid fa-bolt">Энергичный и любознательный</li>
-								<li class="icon solid fa-signal">Знаю работу http/https и REST</li>
+								<li class="icon solid fa-signal">Знаю работу http/https и REST.</li>
 								<li class="icon solid fa-cog">Английский pre-intrmediate</li>
 								<li class="icon solid fa-map-marker-alt">Эффективно работаю удаленно</li>
-								<li class="icon solid fa-code">Стек: Python, Django, djinga, SQL, PostgreSQL</li>
+								<li class="icon solid fa-code">Стек: Python, Django, jinga, SQL(PostgreSQL, sqlite3)</li>
 							</ul>
-							<p>Более подробно написано в резюме, которое находится тут.</p>
+							<p>Более подробно написано в резюме, которое находится тут:<a href="https://career.habr.com/alexey_netcat">career.habr.com/alexey_netcat</a></p>
 						</div>
 					</section>
 
 				<!-- Section 2 -->
-					<section id="first">
+					<section id="second">
 						<header>
 							<h2>В выходные занимаюсь мотокроссом</h2>
 						</header>
@@ -71,7 +73,7 @@
 						</header>
 						<div class="content">
 							<p>Реализовал добавление новостей с помощью admin-панели и специальной страницы на которой пользователь может внести новость без захода в админку. Реализовано на sqlite3 через Django ORM</p>
-							<p>Чтобы добавить запись нажмите на кнопку 'добавить запись', чтобы посмотреть кликните на кнопку 'Читать новости'</p>
+							<p>Чтобы добавить запись нажмите на кнопку 'добавить запись', чтобы посмотреть новости кликните на кнопку 'Читать новости'</p>
 							<a href="{% url 'create' %}"><button class="button primary">Добавить запись</button></a>
 							<a href="{% url 'news_home' %}"><button class="button primary">Читать новости</button></a>
 						</div>
@@ -399,23 +401,7 @@ print 'Sorted in ' + i + ' iterations.';</code></pre>
 							<h2>Свяжитесь со мной</h2>
 						</header>
 						<div class="content">
-							<p>Вы можете отправить мне сообщение на почту. Для этого заполните форму и нажмите кнопку "Отправить". Пока не работает форма</p>
-							<form>
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Имя" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Введи сообщение" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Отправить" class="button primary" /></li>
-								</ul>
-							</form>
+							<span class="image main"><img src="{% static 'main/image/pic03.jpg' %}" alt="" /></span>
 						</div>
 						<footer>
 							<ul class="items">
